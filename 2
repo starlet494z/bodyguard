@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Нажмите кнопку, чтобы отобразить приветствие, основанное на времени:</p>
+
+<button onclick="myFunction()">Попробовать</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 18) {
+    greeting = "Добрый день";
+  } else {
+    greeting = "Добрый вечер";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+</body>
+</html>
